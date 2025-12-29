@@ -1,0 +1,274 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #198754;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+
+.brand-name:hover {
+  color: #198754;
+}
+
+/* BUTTONS */
+.btn-main {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  background: #198754;
+  color: #fff;
+}
+
+.btn-white {
+  background: #fff;
+  color: #0d6efd;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card-box {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* DOCTOR CARDS */
+.doctor-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.doctor-card h6 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.doctor-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.doctor-card .social a {
+  margin: 0 5px;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+
+.doctor-card .social a:hover {
+  color: #198754;
+}
+
+/* TESTIMONIAL CARDS */
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .stars {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h6 {
+  font-weight: bold;
+}
+
+/* ENQUIRY FORM */
+.enquiry-form input,
+.enquiry-form select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.enquiry-form a.btn-main {
+  margin-top: 15px;
+}
+
+/* FAQ */
+.accordion-button {
+  background: #0d6efd;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+  background: #198754;
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  background: #0d6efd;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #198754;
+}
+
+.footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+  color: #198754;
+}
+
+.footer .company:hover {
+  color: #198754;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media(max-width: 991px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 576px) {
+  .hero img {
+    height: 400px;
+  }
+  .doctor-card img {
+    height: 200px;
+  }
+}
